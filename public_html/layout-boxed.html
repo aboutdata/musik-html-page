@@ -27,7 +27,7 @@
                         <a href="index.html" class="navbar-brand text-lt">
                             <img src="images/logo.png" alt=".">
                         </a>
-                    </div>    
+                    </div>  
                     <ul class="nav navbar-nav hidden-xs">
                         <li>
                             <a href="genres.html">
@@ -44,6 +44,11 @@
                         <li>
                             <a href="events.html">
                                 <i class="icon-drawer text-primary-lter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="search" title="搜索">
+                                <i class="fa fa-search text-info-lter"></i>
                             </a>
                         </li>
                     </ul>
@@ -117,7 +122,72 @@
                         </ul>
                     </div>  
                 </div>
+                <!--search bar-->
+                <div id="searchbar" class="bg-black lter">
+                    <div class="container">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control input-sm no-border" placeholder="Search songs, albums..." type="text">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-sm bg-white btn-icon"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="btn-group m-l-xs" data-toggle="buttons">
+                                <label class="btn btn-sm btn-info active">
+                                    <input name="options" type="radio"><i class="fa fa-check text-active"></i> Male
+                                </label>
+                                <label class="btn btn-sm btn-success">
+                                    <input name="options" type="radio"><i class="fa fa-check text-active"></i> Female
+                                </label>
+                                <label class="btn btn-sm btn-primary">
+                                    <input name="options" type="radio"><i class="fa fa-check text-active"></i> N/A
+                                </label>
+                            </div>
+                            <div class="btn-group m-l-xs" data-toggle="buttons">
+                                <label class="btn btn-sm btn-info active">
+                                    <input name="options" type="radio"><i class="fa fa-check text-active"></i> Male
+                                </label>
+                                <label class="btn btn-sm btn-success">
+                                    <input name="options" type="radio"><i class="fa fa-check text-active"></i> Female
+                                </label>
+                            </div>
+                            <div class="btn-group m-l">
+                                <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </header>
+
             <section>
                 <section class="hbox stretch">
                     <section id="content" >
@@ -359,5 +429,13 @@
         <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
         <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
         <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#search").click(function () {
+                    $("#searchbar").toggle("slow");
+                });
+            });
+        </script>
+
     </body>
 </html>
