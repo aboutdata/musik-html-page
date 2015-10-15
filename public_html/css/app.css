@@ -3535,6 +3535,10 @@ fieldset[disabled] .i-checks input + i:before {
 .item:hover .item-overlay {
   display: block;
 }
+.item img{
+    height :200px;
+}
+
 .backdrop {
   position: absolute;
   top: 0;
